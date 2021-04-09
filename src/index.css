@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.weather {
+    background-image: url("C:\Users\s9599245\OneDrive - Saint Marys University\Desktop\myprojects\React Assingment\my-app\src\cold.png");
+    background-size: cover;
+    background-position: bottom;
+    transition: ease-out;
+}
+
+.weather.mild {
+        background-image: url("C:\Users\s9599245\OneDrive - Saint Marys University\Desktop\myprojects\React Assingment\my-app\src\mild.png");
+}
+
+.weather.sunny {
+        background-image: url("C:\Users\s9599245\OneDrive - Saint Marys University\Desktop\myprojects\React Assingment\my-app\src\sunny.png");
+    }
+
+main {
+    min-height: 100vh;
+    padding: 100px;
+}
+
+.search-box {
+    width: 100%;
+    margin: 0 0 25px;
+}
+
+.search-box.search-bar {
+    display: block;
+    width: 500%;
+    padding: 15px;
+    
+    background: none;
+    border: none;
+    outline: none;
+
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 0px 0px 16px;
+    margin-top: -25px;
+
+    box-shadow: 0px 5px rgba(0,0,0,0.2);
+    color: #313131;
+    font-size: 20px;
+
+    transition: 0.4s ease;
+
+}

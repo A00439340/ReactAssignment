@@ -1,34 +1,18 @@
 import React, { Component } from "react"
-import MyTown from "./MyTown"
 
 class AboutMe extends Component {
-	constructor(props)
-	{
-		super(props)
 
-		this.state = {isShowText: false	}
 
-		this.click1 = this.click.bind(this)
-	}
-
-	click()
-	{
-		this.setState({ isShowText: true })
-
-	}
 
 	render() {
 
 		return (
 			<div className="aboutme-container">
 
-				<button className="btn-aboutme" onClick={() => { this.click() }}> <a>About Me</a> </button>
-
 				<div>
-					{this.state.isShowText === true ?
-						<div>
+					
 							<p></p>
-							<img src="logo.PNG" />
+							<img src="logo.PNG" alt="picture of me as a dog"/>
 							
 							<p><h1>Hi, my name is Timur...</h1></p>
 							<text>
@@ -41,14 +25,12 @@ class AboutMe extends Component {
 								<h3>
 								<br />
 								I joined the MCDA program because I want to expand my<br />
-								technical knowledge and start developing apps. Also, sI'm <br />
+								technical knowledge and start developing apps. Also, I'm <br />
 								looking forward to learning more about big data and data<br />
 								mining.
 								</h3>
 							</text>
-
-						</div> : undefined		
-					}
+	
 				</div>
 				
 
